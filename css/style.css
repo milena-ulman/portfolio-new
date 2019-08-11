@@ -4,7 +4,7 @@
 }
 header {
   background: url(../mobile_background.svg);
-  height: 100vh;
+  height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -107,9 +107,26 @@ header {
 .mu-button:nth-child(2) {
   margin-left: 30px;
 }
-.mu-character-text {
-  margin: 0 20px 0 0px;
-}
+
 #mu-about {
   background: #30b1cf;
+  clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+  margin-top: -84px;
+}
+.mu-padding-tb {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.mu-character-name {
+  margin: 0 20px 0 0px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.mu-character-img {
+  height: 40px;
+}
+.mu-character-description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
 }
