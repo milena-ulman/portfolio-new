@@ -32,9 +32,12 @@
       type="text/css"
     />
   </head>
+
   <body>
     <header>
-      <nav class="mu-navbar-desktop d-none d-sm-block pt-3">
+      <nav
+        class="mu-navbar-desktop d-none d-sm-block pt-3 fixed-top bg-white navbar"
+      >
         <ul class="nav justify-content-end">
           <li class="nav-item">
             <a class="nav-link" href="#!">About me</a>
@@ -96,7 +99,7 @@
         </div>
       </nav>
       <div
-        class="container d-flex flex-column justify-content-center h-75 align-items-center align-items-md-start"
+        class="mu-container-text container d-flex flex-column justify-content-center h-75 align-items-center align-items-md-start"
       >
         <div>
           <h1 class="mu-heading mt-5 text-center text-md-left">
@@ -124,83 +127,272 @@
     </header>
     <section id="mu-about">
       <div class="container mu-padding-tb">
-        <div class="d-flex ">
+        <div>
           <h2 class="text-white text">About me</h2>
         </div>
-        <row class="d-flex mt-5 flex-column flex-sm-row wow fadeInLeft">
-          <div class="d-flex flex-column justify-content-center col-sm-4 mt-4">
-            <div class="d-flex align-items-center">
-              <p class="white-text mu-character-name">
-                Quick learner
-              </p>
-              <img class="mu-character-img" src="./quick-learning.svg" />
+        <div class="mt-5 d-block d-sm-none d-lg-block">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="d-flex">
+                <p class="white-text mu-character-name">
+                  Quick learner
+                </p>
+                <img class="mu-character-img" src="./quick-learning.svg" />
+              </div>
+              <div>
+                <p class="white-text pt-3 mu-character-description">
+                  I love exploring new ways to absorb knowledge more
+                  effectively.
+                </p>
+              </div>
             </div>
-            <div>
-              <p class="white-text pt-3 mu-character-description">
-                I love exploring new ways to absorb knowledge more effectively.
-              </p>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="d-flex">
+                <p class="white-text mu-character-name">Creative</p>
+                <img class="mu-character-img" src="./light.svg" />
+              </div>
+              <div>
+                <p class="white-text pt-3 mu-character-description">
+                  While designing new products, I aim for unleashing my creative
+                  spirit.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="d-flex flex-column justify-content-center col-sm-4 mt-4">
-            <div class="d-flex align-items-center">
-              <p class="white-text mu-character-name">Creative</p>
-              <img class="mu-character-img" src="./creative.svg" />
-            </div>
-            <div>
-              <p class="white-text pt-3 mu-character-description">
-                While designing new products, I aim for unleashing my creative
-                spirit.
-              </p>
-            </div>
-          </div>
-          <div class="d-flex flex-column justify-content-center col-sm-4 mt-4">
-            <div class="d-flex align-items-center">
-              <p class="white-text mu-character-name">Listener</p>
-              <img class="mu-character-img" src="./listener.svg" />
-            </div>
-            <div>
-              <p class="white-text pt-3 mu-character-description">
-                While designing new products, I aim for unleashing my creative
-                spirit.
-              </p>
-            </div>
-          </div>
-        </row>
-        <row class="d-flex flex-column flex-sm-row wow fadeInLeft">
-          <div class="d-flex flex-column justify-content-center col-sm-4 mt-4">
-            <div class="d-flex align-items-center">
-              <p class="white-text mu-character-name">Passionate</p>
-              <img class="mu-character-img" src="./passion.svg" />
-            </div>
-            <div>
-              <p class="white-text pt-3 mu-character-description">
-                What drives me the most is passion for my work.
-              </p>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="d-flex">
+                <p class="white-text mu-character-name">Listener</p>
+                <img class="mu-character-img" src="./listener.svg" />
+              </div>
+              <div>
+                <p class="white-text pt-3 mu-character-description">
+                  While designing new products, I aim for unleashing my creative
+                  spirit.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="d-flex flex-column justify-content-center col-sm-4 mt-4">
-            <div class="d-flex align-items-center">
-              <p class="white-text mu-character-name">Chalenges</p>
-              <img class="mu-character-img" src="./challenge.svg" />
+          <div class="row mt-5">
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="d-flex">
+                <p class="white-text mu-character-name">Passionate</p>
+                <img class="mu-character-img" src="./passion.svg" />
+              </div>
+              <div>
+                <p class="white-text pt-3 mu-character-description">
+                  What drives me the most is passion for my work.
+                </p>
+              </div>
             </div>
-            <div>
-              <p class="white-text pt-3 mu-character-description">
-                I enjoy new challenges, there is some excitement behind them.
-              </p>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="d-flex">
+                <p class="white-text mu-character-name">Chalenges</p>
+                <img class="mu-character-img" src="./challenge.svg" />
+              </div>
+              <div>
+                <p class="white-text pt-3 mu-character-description">
+                  I enjoy new challenges, there is some excitement behind them.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="d-flex">
+                <p class="white-text mu-character-name">Empathy</p>
+                <img class="mu-character-img" src="./hand.svg" />
+              </div>
+              <div>
+                <p class="white-text pt-3 mu-character-description">
+                  Empathy is important to me, so is kindness :)
+                </p>
+              </div>
             </div>
           </div>
-          <div class="d-flex flex-column justify-content-center col-sm-4 mt-4">
-            <div class="d-flex align-items-center">
-              <p class="white-text mu-character-name">Empathy</p>
-              <img class="mu-character-img" src="./empathy.svg" />
+        </div>
+        <div class="mt-5 d-none d-sm-block d-lg-none">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="d-flex">
+                <p class="white-text mu-character-name">
+                  Quick learner
+                </p>
+                <img class="mu-character-img" src="./quick-learning.svg" />
+              </div>
+              <div>
+                <p class="white-text pt-3 mu-character-description">
+                  I love exploring new ways to absorb knowledge more
+                  effectively.
+                </p>
+              </div>
             </div>
-            <div>
-              <p class="white-text pt-3 mu-character-description">
-                Empathy is important to me, so is kindness :)
-              </p>
+            <div class="col-sm-6">
+              <div class="d-flex">
+                <p class="white-text mu-character-name">Creative</p>
+                <img class="mu-character-img" src="./creative.svg" />
+              </div>
+              <div>
+                <p class="white-text pt-3 mu-character-description">
+                  While designing new products, I aim for unleashing my creative
+                  spirit.
+                </p>
+              </div>
             </div>
           </div>
-        </row>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="d-flex">
+                <p class="white-text mu-character-name">Listener</p>
+                <img class="mu-character-img" src="./listener.svg" />
+              </div>
+              <div>
+                <p class="white-text pt-3 mu-character-description">
+                  While designing new products, I aim for unleashing my creative
+                  spirit.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="d-flex">
+                <p class="white-text mu-character-name">Passionate</p>
+                <img class="mu-character-img" src="./passion.svg" />
+              </div>
+              <div>
+                <p class="white-text pt-3 mu-character-description">
+                  What drives me the most is passion for my work.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="d-flex">
+                <p class="white-text mu-character-name">Chalenges</p>
+                <img class="mu-character-img" src="./challenge.svg" />
+              </div>
+              <div>
+                <p class="white-text pt-3 mu-character-description">
+                  I enjoy new challenges, there is some excitement behind them.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex">
+                <p class="white-text mu-character-name">Empathy</p>
+                <img class="mu-character-img" src="./empathy.svg" />
+              </div>
+              <div>
+                <p class="white-text pt-3 mu-character-description">
+                  Empathy is important to me, so is kindness :)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mu-skills" id="mu-skills">
+      <div class="container mu-padding-tb">
+        <h2 class="section-text text">Technology stack</h2>
+        <div class="row d-flex justify-content-between mt-5">
+          <div
+            class="mu-technology-box d-flex flex-column align-items-center col-4 col-sm-4 col-md-1"
+          >
+            <img class="mu-technology-img" src="/technology-svg/html.svg" />
+            <p class="technology-title text-uppercase mt-3">HTML</p>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center col-4 col-sm-4 col-md-1"
+          >
+            <img class="mu-technology-img" src="/technology-svg/css.svg" />
+            <p class="technology-title text-uppercase mt-3">CSS</p>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center col-4 col-sm-4 col-md-1"
+          >
+            <img
+              class="mu-technology-img"
+              src="/technology-svg/javascript.svg"
+            />
+            <p class="technology-title text-uppercase mt-3">JS</p>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center col-4 col-sm-4 col-md-1"
+          >
+            <img class="mu-technology-img" src="/technology-svg/jquery.svg" />
+            <p class="technology-title text-uppercase mt-3">jQuery</p>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center col-4 col-sm-4 col-md-1"
+          >
+            <img
+              class="mu-technology-img"
+              src="/technology-svg/bootstrap.svg"
+            />
+            <p class="technology-title text-uppercase mt-3">bootstrap</p>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center col-4 col-sm-4 col-md-1"
+          >
+            <img class="mu-technology-img" src="/technology-svg/rwd.svg" />
+            <p class="technology-title text-uppercase mt-3">RWD</p>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center col-4 col-sm-4 col-md-1"
+          >
+            <img class="mu-technology-img" src="/technology-svg/seo.svg" />
+            <p class="technology-title text-uppercase mt-3">SEO</p>
+          </div>
+
+          <div
+            class="d-flex flex-column align-items-center col-4 col-sm-4 col-md-1"
+          >
+            <img class="mu-technology-img" src="/technology-svg/git.svg" />
+            <p class="technology-title text-uppercase mt-3">Git</p>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center col-4 col-sm-4 d-lg-none"
+          ></div>
+        </div>
+        <h2 class="section-text text mt-5">Programs</h2>
+        <div class="row d-flex mt-5 justify-content-center">
+          <div
+            class="mu-technology-box d-flex flex-column align-items-center col-4 col-lg-1"
+          >
+            <img
+              class="mu-programs-img"
+              src="/programs-logo/adobe-illustrator-cc.svg"
+            />
+            <p class="technology-title text-uppercase text-center mt-3 ">adobe illustrator</p>
+          </div>
+          <div class="d-flex flex-column align-items-center col-4 col-lg-1">
+            <img
+              class="mu-programs-img"
+              src="/programs-logo/photoshop-cc.svg"
+            />
+            <p class="technology-title text-uppercase text-center mt-3 ">adobe photoshop</p>
+          </div>
+          <div class="d-flex flex-column align-items-center col-4 col-lg-1">
+            <img
+              class="mu-programs-img"
+              src="/programs-logo/after-effects-cc.svg"
+            />
+            <p class="technology-title text-uppercase text-center mt-3 ">after efects</p>
+          </div>
+          <div class="d-flex flex-column align-items-center col-4 col-lg-1">
+            <img class="mu-programs-img" src="/programs-logo/adobe-xd.svg" />
+            <p class="technology-title text-uppercase text-center mt-3 ">adobe xD</p>
+          </div>
+          <div class="d-flex flex-column align-items-center col-4 col-lg-1">
+            <img class="mu-programs-img" src="/programs-logo/sketch-2.svg" />
+            <p class="technology-title text-uppercase text-center mt-3">sketch</p>
+          </div>
+          <div class="d-flex flex-column align-items-center col-4 col-lg-1">
+            <img
+              class="mu-programs-img"
+              src="/programs-logo/inkscape-logo.svg"
+            />
+            <p class="technology-title text-uppercase text-center mt-3 ">inkscape</p>
+          </div>
+        </div>
       </div>
     </section>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>

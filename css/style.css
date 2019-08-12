@@ -95,14 +95,23 @@ header {
   font-weight: 300;
   letter-spacing: -1px;
 }
+.mu-container-text {
+  padding: 0;
+}
 .mu-button {
   background: #f9bf4d;
-  border: none;
+  border: 2px solid #f9bf4d;
   padding: 0;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  border-radius: 15px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+}
+.mu-button:hover {
+  background: #ffffff;
+  color: #f9bf4d;
 }
 .mu-button:nth-child(2) {
   margin-left: 30px;
@@ -123,10 +132,40 @@ header {
   font-size: 20px;
 }
 .mu-character-img {
-  height: 40px;
+  height: 45px;
 }
 .mu-character-description {
   font-weight: 300;
   font-size: 14px;
   line-height: 26px;
+}
+.section-text {
+  color: #707070;
+}
+
+.mu-technology-img,
+.mu-programs-img {
+  width: 55px;
+}
+.technology-title {
+  font-size: 12px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 576px) {
+  .mu-container-text {
+    margin-top: 50px;
+  }
+  header {
+    height: 102vh !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mu-heading {
+    background: -webkit-linear-gradient(#00d455ff, #00aad4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #mu-about {
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
+  }
 }
