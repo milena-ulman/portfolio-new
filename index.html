@@ -17,18 +17,26 @@
   <link href="css/style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display:400,400i,700,700i&display=swap"
     rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Tillana:400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
     type="text/css" />
 </head>
 
 <body>
+ 
   <header>
+      <div class="progress-container fixed-top">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
     <img class="mu-moblie-img d-none d-md-block" src="moblie-img.svg"/>
     <nav class="mu-navbar-desktop d-none d-sm-block pt-3 fixed-top bg-white navbar">
+      
       <div class="d-flex justify-content-between align-items-center">
-        <div><img class="mu-logo"src="logo.svg"/></div>
         <div>
-      <ul class="nav">
+          <img class="mu-logo ml-md-5"src="logo.svg"/>
+        </div>
+        <div>
+      <ul class="nav mr-md-5">
         <li class="nav-item">
           <a class="nav-link" href="#!">About me</a>
         </li>
@@ -78,7 +86,7 @@
       </div>
     </nav>
     <div
-      class="mu-container-text container d-flex flex-column justify-content-center align-items-center align-items-md-start mr-md-4">
+      class="mu-container-text container d-flex flex-column justify-content-center align-items-center align-items-md-start">
       <div>
         <h1 class="mu-heading mt-5 text-center text-md-left">
           UX/UI Designer
@@ -89,21 +97,22 @@
           experience
           and graphic design.
         </h5>
-        <div class="mt-4"></div>
-        <button type="button" class="mu-button p-2">
-            Meet me
-          </button>
-          <button type="button" class="mu-button mu-button-second p-2">
-            My projects
-          </button>
       </div>
-     
+      <div class="d-flex mt-4">
+        <button type="button" class="mu-button p-2">
+          Meet me
+        </button>
+        <button type="button" class="mu-button mu-button-second p-2">
+          My projects
+        </button>
+      </div>
     </div>
   </header>
   <section id="mu-about">
     <div class="container mu-padding-tb">
-      <div>
-        <h2 class="text-white text">About me</h2>
+      <div class="row align-items-center">
+        <img src="logo-section.svg"/>
+        <h2 class="text-white mu-section-heading pl-3">About me</h2>
       </div>
       <div class="mt-5 d-block d-sm-none d-lg-block">
         <div class="row">
@@ -266,7 +275,10 @@
   </section>
   <section class="mu-skills" id="mu-skills">
     <div class="container mu-padding-tb">
-      <h2 class="section-text text">Technology stack</h2>
+      <div class="row align-items-center">
+        <img src="logo-section.svg"/>
+      <h2 class="section-text mu-section-heading pl-3">Technology stack</h2>
+      </div>
       <div class="row d-flex justify-content-between mt-5 ">
         <div
           class="mu-technology-container d-flex flex-column align-items-center col-4 col-sm-4 col-md-1 wow fadeInLeft"
@@ -305,7 +317,10 @@
         </div>
         <div class="d-flex flex-column align-items-center col-4 col-sm-4 d-lg-none"></div>
       </div>
-      <h2 class="section-text text mt-5">Programs</h2>
+      <div class="row align-items-center mt-5">
+      <img src="logo-section.svg"/>
+      <h2 class="section-text text mu-section-heading pl-3">Programs</h2>
+      </div>
       <div class="row d-flex mt-5 justify-content-center overflow-hidden">
         <div class="mu-technology-box d-flex flex-column align-items-center col-4 col-lg-1 wow fadeInRight"
           data-wow-delay="0.1s">
@@ -349,8 +364,9 @@
   </section>
   <section class="mu-projects">
     <div class="container mu-padding-tbig">
-      <div>
-        <h2 class="white-text">Projects</h2>
+      <div class="row align-items-center">
+          <img src="logo-section.svg"/>
+        <h2 class="white-text mu-section-heading pl-3">Projects</h2>
       </div>
     </div>
     <div class="d-flex flex-column flex-md-row">
@@ -383,30 +399,39 @@
         <h3 class="text-center">First step</h3>
         <div class="mu-animation" id="computer"></div>
 
-        <p class="col-10 pt-4">Ustalenie szczegółów z klientem, szukanie podobnych stron interentowych lub aplikacji,
+        <p class="mu-animation-desc col-10 pt-4">Ustalenie szczegółów z klientem, szukanie podobnych stron interentowych lub aplikacji,
           czerpanie inspiracji ze znalezionych projektów</p>
       </div>
       <div class="d-flex flex-column align-items-center pt-5">
         <h3 class="text-center">Second step</h3>
         <div class="mu-animation" id="prototype"></div>
       </div>
-      <p class="col-10 pt-4">Ustalenie szczegółów z klientem, szukanie podobnych stron interentowych lub aplikacji,
+      <p class="mu-animation-desc col-10 pt-4">Ustalenie szczegółów z klientem, szukanie podobnych stron interentowych lub aplikacji,
         czerpanie inspiracji ze znalezionych projektów</p>
 
       <div class="d-flex flex-column align-items-center pt-5">
         <h3 class="text-center">Third step</h3>
         <div class="mu-animation" id="anim"></div>
       </div>
-      <p class="col-10 pt-4">Ustalenie szczegółów z klientem, szukanie podobnych stron interentowych lub aplikacji,
+      <p class="mu-animation-desc col-10 pt-4">Ustalenie szczegółów z klientem, szukanie podobnych stron interentowych lub aplikacji,
         czerpanie inspiracji ze znalezionych projektów</p>
       <div class="d-flex flex-column align-items-center pt-5">
         <h3 class="text-center">Fourth step</h3>
         <div class="mu-animation" id="programing"></div>
       </div>
-      <p class="col-10 pt-4">Ustalenie szczegółów z klientem, szukanie podobnych stron interentowych lub aplikacji,
+      <p class="mu-animation-desc col-10 pt-4">Ustalenie szczegółów z klientem, szukanie podobnych stron interentowych lub aplikacji,
         czerpanie inspiracji ze znalezionych projektów</p>
     </div>
   </div>
+  </div>
+  <footer class="footer">
+<img class="pt-5 pb-5" src="logo.svg"/>
+  
+  <div class="footer-copyright text-center py-3 bg-dark"><p class="text-white">© 2019 Copyright: Milena Ulman</p>
+
+  
+  </footer>
+
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.7/lottie_html.js"></script>

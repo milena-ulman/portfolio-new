@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="132.55187"
-     inkscape:cy="786.72447"
+     inkscape:cx="806.82496"
+     inkscape:cy="443.07451"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -53,9 +53,8 @@
      id="layer1"
      transform="translate(325.98359,-27.611419)">
     <path
-       style="opacity:1;fill:#333333;fill-opacity:1;stroke:none;stroke-width:1.40220475;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
-       d="M 766.16211,107.69922 0,158.99219 v 967.01561 h 766.97656 c 0,0 -2.26896,-757.59691 -0.81445,-1018.30858 z"
-       transform="matrix(0.26458333,0,0,0.26458333,-325.98359,-0.88399896)"
+       style="opacity:1;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.37099999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="M -120.60001,27.611419 -325.98359,41.182684 V 297.03889 h 205.60191 c 0,0 -0.60823,-200.447509 -0.21833,-269.427471 z"
        id="rect2339"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />

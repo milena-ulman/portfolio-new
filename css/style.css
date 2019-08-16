@@ -16,6 +16,10 @@ header {
   top: 100px;
   right: 5vw;
 }
+.mu-navbar-desktop,
+.mu-navbar-moblie {
+  z-index: 1;
+}
 .animated-icon1,
 .animated-icon2,
 .animated-icon3 {
@@ -111,32 +115,37 @@ header {
   font-weight: 400;
   line-height: 1.5;
   color: #666;
+  font-family: "Tillana", cursive;
+}
+.mu-section-heading {
+  margin: 0;
 }
 .mu-container-text {
   padding: 0;
   height: 100vh;
 }
 .mu-button {
-  background: #ff7f2aff;
-  border: 2px solid #ff7f2aff;
+  border: 1px solid #ff7f2aff;
   padding: 8px !important;
-  color: #ffffff;
+  color: #ff7f2aff;
   font-size: 13px;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 15px;
   letter-spacing: 0.5px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 2px -2px gray;
+  background: transparent;
 }
 .mu-button:hover {
   background: #ffffff;
-  color: #ff7f2aff;
-  box-shadow: 0 4px 6px -2px gray;
+
+  color: #ffffff;
+  background: #ff7f2aff;
 }
 .mu-button:nth-child(2) {
   margin-left: 30px;
 }
-#mu-about {
+#mu-about,
+.footer {
   background: url(../bg-section.svg);
   background-size: cover;
 }
@@ -153,9 +162,9 @@ header {
   transition: box-shadow 0.5s ease-in-out;
 }
 .mu-character-container:hover {
-  -webkit-box-shadow: 0px 5px 13px 0px rgba(21, 24, 56, 1);
-  -moz-box-shadow: 0px 5px 13px 0px rgba(21, 24, 56, 1);
-  box-shadow: 0px 5px 13px 0px rgba(21, 24, 56, 1);
+  -webkit-box-shadow: 0px 5px 13px 0px rgb(25, 26, 27);
+  -moz-box-shadow: 0px 5px 13px 0px rgb(25, 26, 27);
+  box-shadow: 0px 5px 13px 0px rgb(25, 26, 27);
 }
 .mu-character-name {
   margin: 0 20px 0 0px;
@@ -169,6 +178,7 @@ header {
   font-weight: 300;
   font-size: 14px;
   line-height: 26px;
+  font-family: "Tillana", cursive;
 }
 .section-text {
   color: #707070;
@@ -177,10 +187,17 @@ header {
 .mu-technology-img,
 .mu-programs-img {
   width: 55px;
+  transition: all 0.5s ease-in-out;
+}
+.mu-technology-img:hover,
+.mu-programs-img:hover {
+  transform: rotate(360deg);
 }
 .technology-title {
   font-size: 12px;
   font-weight: 500;
+  font-family: "Tillana", cursive;
+  font-weight: 700;
 }
 .mu-projects {
   background: url(../bg-section-flip.svg);
@@ -225,6 +242,9 @@ header {
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
+.content-details h3 {
+  font-family: "Tillana", cursive;
+}
 .content:hover .content-details {
   top: 50%;
   left: 50%;
@@ -245,6 +265,9 @@ header {
 .fadeIn-right {
   left: 80%;
 }
+.mu-animation-desc {
+  font-family: "Tillana", cursive;
+}
 @media only screen and (max-width: 576px) {
   header {
     background: white;
@@ -258,4 +281,27 @@ header {
 .mu-animation {
   height: 150px;
   width: 150px;
+}
+.mu-loader {
+  height: 100vh !important;
+}
+#mu_app {
+  display: none;
+}
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: rgba(48, 177, 207);
+  width: 0%;
+}
+
+.content-bar {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
 }
