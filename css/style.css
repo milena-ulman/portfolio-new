@@ -1,12 +1,20 @@
 * {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 header {
-  background: url(../mobile_background.svg);
-  height: 110vh;
+  background: white;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.mu-logo {
+  height: 50px;
+}
+.mu-moblie-img {
+  position: absolute;
+  top: 100px;
+  right: 5vw;
 }
 .animated-icon1,
 .animated-icon2,
@@ -47,7 +55,7 @@ header {
 }
 
 .animated-icon1 span {
-  background: #e65100;
+  background: #ff7f2aff;
 }
 
 .animated-icon2 span {
@@ -91,36 +99,46 @@ header {
   transform: rotate(-135deg);
 }
 .mu-heading {
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
   font-size: 60px;
-  font-weight: 300;
-  letter-spacing: -1px;
+  background: -webkit-linear-gradient(#00d455ff, #00aad4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mu-subheading {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666;
 }
 .mu-container-text {
   padding: 0;
+  height: 100vh;
 }
 .mu-button {
-  background: #f9bf4d;
-  border: 2px solid #f9bf4d;
-  padding: 0;
+  background: #ff7f2aff;
+  border: 2px solid #ff7f2aff;
+  padding: 8px !important;
   color: #ffffff;
   font-size: 13px;
   font-weight: 600;
-  border-radius: 20px;
+  border-radius: 10px;
   letter-spacing: 0.5px;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 2px -2px gray;
 }
 .mu-button:hover {
   background: #ffffff;
-  color: #f9bf4d;
+  color: #ff7f2aff;
+  box-shadow: 0 4px 6px -2px gray;
 }
 .mu-button:nth-child(2) {
   margin-left: 30px;
 }
-
 #mu-about {
-  background: #30b1cf;
-  clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
-  margin-top: -84px;
+  background: url(../bg-section.svg);
+  background-size: cover;
 }
 .mu-padding-tb {
   padding-top: 80px;
@@ -129,6 +147,15 @@ header {
 .mu-padding-tbig {
   padding-top: 160px;
   padding-bottom: 80px;
+}
+.mu-character-container {
+  padding: 20px !important;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.mu-character-container:hover {
+  -webkit-box-shadow: 0px 5px 13px 0px rgba(21, 24, 56, 1);
+  -moz-box-shadow: 0px 5px 13px 0px rgba(21, 24, 56, 1);
+  box-shadow: 0px 5px 13px 0px rgba(21, 24, 56, 1);
 }
 .mu-character-name {
   margin: 0 20px 0 0px;
@@ -156,28 +183,79 @@ header {
   font-weight: 500;
 }
 .mu-projects {
-  background-color: #36393a;
-  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+  background: url(../bg-section-flip.svg);
+  background-size: cover;
 }
-
+.content {
+  position: relative;
+  overflow: hidden;
+}
+.content .content-overlay {
+  background: rgba(48, 177, 207, 0.9);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.content:hover .content-overlay {
+  opacity: 1;
+}
+.content-image {
+  width: 100%;
+}
+.content-details {
+  position: absolute;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+}
+.fadeIn-bottom {
+  top: 80%;
+}
+.fadeIn-left {
+  left: 20%;
+}
+.fadeIn-right {
+  left: 80%;
+}
 @media only screen and (max-width: 576px) {
-  .mu-container-text {
-    margin-top: 50px;
-  }
   header {
-    height: 102vh !important;
+    background: white;
   }
 }
 @media only screen and (max-width: 768px) {
-  .mu-heading {
-    background: -webkit-linear-gradient(#00d455ff, #00aad4ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .mu-padding-tbig {
+    padding-top: 80px;
   }
-  #mu-about {
-    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
-  }
-  .mu-projects {
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
-  }
+}
+.mu-animation {
+  height: 150px;
+  width: 150px;
 }

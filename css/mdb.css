@@ -386,7 +386,7 @@
 
 .rgba-blue-strong,
 .rgba-blue-strong:after {
-  background-color: rgba(33, 150, 243, 0.7); }
+  background-color: rgba(33, 150, 243, 0.1); }
 
 .blue.darken-1 {
   background-color: #1e88e5 !important; }
