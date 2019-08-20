@@ -7,7 +7,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="10.583333mm"
@@ -18,47 +17,7 @@
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="jquery.svg">
   <defs
-     id="defs4031">
-    <linearGradient
-       id="linearGradient937"
-       inkscape:collect="always">
-      <stop
-         id="stop933"
-         offset="0"
-         style="stop-color:#00aec6;stop-opacity:1" />
-      <stop
-         id="stop935"
-         offset="1"
-         style="stop-color:#00d358;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient937"
-       id="linearGradient863"
-       x1="-74.419952"
-       y1="123.2793"
-       x2="-74.32515"
-       y2="105.60556"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient937"
-       id="linearGradient865"
-       x1="-66.919083"
-       y1="137.09752"
-       x2="-66.833832"
-       y2="117.44275"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient937"
-       id="linearGradient873"
-       x1="-74.419952"
-       y1="123.2793"
-       x2="-74.32515"
-       y2="105.60556"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
+     id="defs4031" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -67,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="-1.1312066"
+     inkscape:cx="4.4937934"
      inkscape:cy="14.953702"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -96,7 +55,7 @@
      transform="translate(71.643785,-121.4115)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.020123px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Bold';letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient873);fill-opacity:1;stroke:url(#linearGradient863);stroke-width:0.37100002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.020123px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Bold';letter-spacing:0px;word-spacing:0px;fill:#939dac;fill-opacity:1;stroke:#939dac;stroke-width:0.37100002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="-76.94648"
        y="115.32153"
        id="text1885"
@@ -105,12 +64,12 @@
          id="tspan1883"
          x="-76.94648"
          y="115.32153"
-         style="fill:url(#linearGradient873);fill-opacity:1;stroke:url(#linearGradient863);stroke-width:0.37100002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">jQ</tspan></text>
+         style="fill:#939dac;fill-opacity:1;stroke:#939dac;stroke-width:0.37100002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;">jQ</tspan></text>
     <path
        sodipodi:nodetypes="sssssssss"
        inkscape:connector-curvature="0"
        d="m -69.851953,121.64689 h 6.99967 c 0.862252,0 1.556443,0.56378 1.556443,1.26407 v 7.58443 c 0,0.70028 -0.694191,1.26406 -1.556443,1.26406 h -6.99967 c -0.862231,0 -1.556444,-0.56378 -1.556444,-1.26406 v -7.58443 c 0,-0.70029 0.694213,-1.26407 1.556444,-1.26407 z"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:url(#linearGradient865);stroke-width:0.47077617;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#939dac;stroke-width:0.47077617;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
        id="path1887" />
   </g>
 </svg>

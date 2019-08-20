@@ -3,11 +3,12 @@ window.onscroll = function() {
 };
 
 function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height =
+  const winScroll =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  const height =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
+  const scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 $(document).on("DOMContentLoaded", function() {
@@ -64,3 +65,4 @@ const loader = bodymovin.loadAnimation({
   path: "loader.json",
   speed: 0
 });
+window.ws = new WebSlides();
