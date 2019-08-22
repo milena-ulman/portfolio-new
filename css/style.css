@@ -6,7 +6,7 @@ a {
   color: #9e9e9e;
 }
 b {
-  color: #d7d7f4ff;
+  color: #ff7ab0;
 }
 header {
   background: white;
@@ -164,6 +164,11 @@ header {
 
 .mu-character-img {
   height: 50px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.mu-character-img:hover {
+  transform: scale(1.3);
 }
 .mu-character-description {
   line-height: 1.5;
@@ -174,7 +179,7 @@ header {
 
 .mu-technology-img,
 .mu-programs-img {
-  width: 120px;
+  width: 60px;
   transition: all 0.5s ease-in-out;
 }
 .mu-technology-img:hover,
