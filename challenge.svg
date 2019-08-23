@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-658.57144"
-     inkscape:cy="291.42854"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="-8.3066076"
+     inkscape:cy="10.69635"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,28 +53,19 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-92.226193,-306.07141)">
-    <g
-       id="g3549">
-      <ellipse
-         style="opacity:1;fill:#939dac;fill-opacity:1;stroke:#6a6a6a;stroke-width:0.49999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         id="ellipse1816"
-         cx="74.250679"
-         cy="317.71613"
-         transform="rotate(-4.2363618)"
-         rx="5.0414648"
-         ry="5.0414767" />
-      <path
-         sodipodi:nodetypes="cacccccccccaccc"
-         inkscape:connector-curvature="0"
-         id="path1162-5"
-         d="m 94.460567,308.06987 c 0.024,1.58154 0.10899,2.87582 0.85487,4.07318 0.36673,0.58872 1.11634,1.16654 1.65995,1.33677 v 1.21884 l -0.50576,0.27172 v 0.5559 h 1.03838 1.03838 v -0.5559 l -0.50576,-0.27172 v -1.21884 c 0.54361,-0.17023 1.29322,-0.74805 1.65995,-1.33677 0.745883,-1.19736 0.848253,-2.34967 0.854873,-4.07318 h -3.047443 z"
-         style="opacity:1;fill:#d6d6f3;fill-opacity:1;stroke:#6a6a6a;stroke-width:0.49999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
-      <path
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.49999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         d="m 95.232866,308.80821 c 0.0167,1.25376 0.114911,2.33473 0.76606,3.22899 0.350011,0.48067 0.77665,0.92475 1.525381,0.92475 0.74873,0 1.17641,-0.44332 1.52537,-0.92475 0.64164,-0.88527 0.73861,-1.82842 0.74322,-3.19472 l -2.26859,-0.0342 z"
-         id="path1823"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cacaccc" />
-    </g>
+    <ellipse
+       ry="5.0414767"
+       rx="5.0414648"
+       transform="rotate(-4.2363618)"
+       cy="317.71613"
+       cx="74.250679"
+       id="ellipse1816"
+       style="opacity:1;fill:#939dac;fill-opacity:1;stroke:#6a6a6a;stroke-width:0.49999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+    <path
+       style="opacity:1;fill:#d6d6df;fill-opacity:1;stroke:#6a6a6a;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 94.614587,308.23623 c 0.02313,1.52485 0.105029,2.77274 0.823798,3.92718 0.3534,0.56762 1.075764,1.12473 1.599615,1.28885 v 1.17516 l -0.487377,0.26198 v 0.53597 h 1.000638 1.000637 v -0.53597 l -0.487377,-0.26198 v -1.17516 c 0.523852,-0.16412 1.246215,-0.72123 1.599615,-1.28885 0.718774,-1.15444 0.817424,-2.26545 0.823804,-3.92718 h -2.936679 z"
+       id="path1162-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cacccccccccaccc" />
   </g>
 </svg>
