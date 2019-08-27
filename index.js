@@ -1,7 +1,22 @@
-$(document).on("DOMContentLoaded", function() {
-  $(".loader-container").show();
-});
 WOW().init();
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+
+  if (scroll > 10) {
+    $(".mu-arrow-down").addClass("mu-hidden");
+  } else {
+    $(".mu-arrow-down").removeClass("mu-hidden");
+  }
+});
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+
+  if (scroll > 1000) {
+    $(".footer").addClass("mu-top");
+  } else {
+    $(".footer").removeClass("mu-top");
+  }
+});
 $(document).ready(function() {
   $(".mu-logo").click(function() {
     location.reload(true);
@@ -22,8 +37,7 @@ $(document).ready(function() {
     container: document.getElementById("anim"),
     render: "svg",
     loop: true,
-    path: "data.json",
-    speed: 0
+    path: "data.json"
   });
   const computerAnim = bodymovin.loadAnimation({
     container: document.getElementById("computer"),
@@ -35,21 +49,32 @@ $(document).ready(function() {
     container: document.getElementById("programing"),
     render: "svg",
     loop: true,
-    path: "pro.json",
-    speed: 0
+    path: "pro.json"
   });
   const prototypeAnimation = bodymovin.loadAnimation({
     container: document.getElementById("prototype"),
     render: "svg",
     loop: true,
-    path: "prototype.json",
-    speed: 0
+    path: "prototype.json"
   });
-  const loader = bodymovin.loadAnimation({
-    container: document.getElementById("loader"),
-    render: "svg",
-    loop: true,
-    path: "loader.json",
-    speed: 0
+});
+let mainNavLinks = document.querySelectorAll("nav ul li a");
+let lastId;
+let cur = [];
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector(link.hash);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
   });
 });
