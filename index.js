@@ -1,6 +1,11 @@
 WOW().init();
+$(document).ready(function() {
+  $("#mu_app-loader").fadeOut();
+  $("#mu_app").fadeIn();
+});
+
 $(window).scroll(function() {
-  var scroll = $(window).scrollTop();
+  const scroll = $(window).scrollTop();
 
   if (scroll > 10) {
     $(".mu-arrow-down").addClass("mu-hidden");
@@ -9,13 +14,16 @@ $(window).scroll(function() {
   }
 });
 $(window).scroll(function() {
-  var scroll = $(window).scrollTop();
+  const scroll = $(window).scrollTop();
 
   if (scroll > 1000) {
     $(".footer").addClass("mu-top");
   } else {
     $(".footer").removeClass("mu-top");
   }
+});
+$(".navbar-nav>li>a").on("click", function() {
+  $(".navbar-collapse").collapse("hide");
 });
 $(document).ready(function() {
   $(".mu-logo").click(function() {

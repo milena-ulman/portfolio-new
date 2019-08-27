@@ -14,10 +14,12 @@ header {
   width: 100%;
 }
 .mu-about,
-.mu-skills,
 .mu-projects,
 .mu-workflow {
   z-index: 10000;
+}
+.mu-workflow {
+  background: coral;
 }
 .mu-arrow-container {
   height: 100vh;
@@ -28,10 +30,16 @@ header {
   position: relative;
   z-index: 10;
   margin-bottom: 32px;
+  animation: liftingSVG 2s infinite;
 }
+
 .mu-logo {
   height: 40px;
   cursor: pointer;
+  transition: filter 0.3s ease-in;
+}
+.mu-logo:hover {
+  filter: brightness(120%);
 }
 .navbar {
   box-shadow: none;
@@ -142,7 +150,6 @@ header {
   font-weight: 400;
   line-height: 1.5;
   color: #666;
-  font-style: italic;
 }
 .mu-section-heading {
   font-size: 48px;
@@ -168,9 +175,6 @@ header {
 .mu-button:nth-child(2) {
   margin-left: 30px;
 }
-.mu-skills {
-  background: #424242;
-}
 .mu-about,
 .footer {
   background: #333;
@@ -178,20 +182,17 @@ header {
 .footer {
   z-index: 100;
 }
-.mu-heart,
 .mu-social-footer {
   width: 30px;
   height: 30px;
+  cursor: pointer;
+  transition: fill 0.3s ease-in-out;
 }
-
 .mu-character-img {
   width: 50px;
   height: 50px;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
-}
-.mu-character-img:hover {
-  transform: scale(1.1);
 }
 .svg-main:hover .svg-pink {
   fill: #ffb1d0;
@@ -202,28 +203,19 @@ header {
 .svg-main:hover .svg-yellow {
   fill: #f6df5a;
 }
+.mu-social-footer:hover .git {
+  fill: #000000;
+}
+.mu-social-footer:hover .linkedin {
+  fill: #007bb6;
+}
 .mu-character-description {
   line-height: 1.5;
+  padding-left: 15px;
 }
 .section-text {
   color: #707070;
   font-weight: 500;
-}
-
-.mu-technology-img,
-.mu-programs-img {
-  width: 60px;
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-.mu-technology-img:hover,
-.mu-programs-img:hover {
-  transform: rotate(360deg);
-}
-.technology-title {
-  font-size: 14px;
-  font-weight: 500;
-  font-weight: 700;
 }
 .mu-projects {
   background: #cbe37f;
@@ -310,9 +302,26 @@ nav ul li a.current {
     left: 0;
   }
 }
+@media only screen and (max-width: 768px) {
+  .mu-container-text {
+    left: 0;
+    right: 0;
+  }
+}
 .mu-hidden {
   visibility: hidden;
 }
 .mu-top {
   bottom: 0;
+}
+.mu-loader {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  position: relative;
+  z-index: 100000000;
+  overflow: hidden;
+}
+.mu-app {
+  display: none;
 }

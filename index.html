@@ -1,492 +1,707 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-
-  <title>Portfolio Milena Ulman</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700&display=swap"
-    rel="stylesheet" />
-  <link rel="shortcut icon" type="image/png" href="assets/icon.ico" />
-  <link rel="shortcut icon" href="/path/to/favicon.ico" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/mdb.min.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display:400,400i,700,700i&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Tillana:400,500,600,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
-    type="text/css" />
-
-</head>
-
-<body>
-  <header>
-
-    <nav class="mu-navbar-desktop d-none d-sm-block pt-3 pb-3 fixed-top bg-white">
-      <div class="d-flex justify-content-between align-items-center">
-        <div>
-          <img class="mu-logo ml-sm-5" src="logo_new.svg" />
+    <title>Portfolio Milena Ulman</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="assets/icon.ico" />
+    <link rel="shortcut icon" href="/path/to/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display:400,400i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tillana:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="mu-loader" id="mu_app-loader"></div>
+    <div id="mu_app" class="mu-app">
+      <header>
+        <nav
+          class="mu-navbar-desktop d-none d-sm-block pt-3 pb-3 fixed-top bg-white"
+        >
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <img class="mu-logo ml-sm-5" src="logo_new.svg" />
+            </div>
+            <div>
+              <ul class="nav mr-md-5">
+                <li class="nav-item">
+                  <a class="nav-link" href="#mu-about">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mu-workflow">How I work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mu-projects">Projects</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav
+          class="navbar navbar-light  mu-navbar-moblie d-block d-sm-none d-flex fixed-top bg-white"
+        >
+          <a class="navbar-brand" href="#"
+            ><img class="mu-logo" src="logo_new.svg"
+          /></a>
+          <button
+            class="navbar-toggler first-button"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent20"
+            aria-controls="navbarSupportedContent20"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="animated-icon1">
+              <span></span><span></span><span></span>
+            </div>
+          </button>
+          <div
+            class="collapse navbar-collapse overflow-hidden"
+            id="navbarSupportedContent20"
+          >
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item mt-3">
+                <a class="nav-link mu-mobile-link mt-1 mb-1" href="#mu-about"
+                  >About me <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mu-mobile-link mt-1 mb-1" href="#mu-workflow"
+                  >How I work</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mu-mobile-link mt-1 mb-1" href="#mu-projects"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div
+          class="position-fixed mu-container-text container d-flex flex-column flex-md-row justify-content-center justify-content-md-around align-items-center"
+        >
+          <div>
+            <h3
+              class="mu-subheading col-12 text-center text-md-left col-md-8 mt-3 pl-0"
+            >
+              Milena Ulman
+            </h3>
+            <h1 class="mu-heading text-center text-md-left mb-4">
+              UX/UI Designer
+            </h1>
+          </div>
+          <div>
+            <img
+              class="mu-moblie-img col-6 offset-3 col-md-12 offset-md-0 position-relative mt-5 mb-5 d-none d-md-block"
+              src="moblie-img.svg"
+            />
+          </div>
         </div>
-        <div>
-          <ul class="nav mr-md-5">
-            <li class="nav-item">
-              <a class="nav-link" href="#mu-about">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mu-skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mu-projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mu-workflow">Workflow</a>
-            </li>
-          </ul>
+        <div
+          class="d-flex align-items-end justify-content-center mu-arrow-container"
+        >
+          <a href="#mu-about">
+            <img class="mu-arrow-down" src="chevron-down-solid.svg"
+          /></a>
         </div>
-      </div>
-    </nav>
-    <nav class="navbar navbar-light  mu-navbar-moblie d-block d-sm-none d-flex fixed-top bg-white">
-      <a class="navbar-brand" href="#"><img class="mu-logo" src="logo_new.svg" /></a>
-      <button class="navbar-toggler first-button" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <div class="animated-icon1">
-          <span></span><span></span><span></span>
-        </div>
-      </button>
-      <div class="collapse navbar-collapse overflow-hidden" id="navbarSupportedContent20">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item mt-3">
-            <a class="nav-link mu-mobile-link mt-1 mb-1" href="#mu-about">About me <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mu-mobile-link mt-1 mb-1" href="#mu-skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mu-mobile-link mt-1 mb-1" href="#mu-projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mu-mobile-link mt-1 mb-1" href="#mu-workflow">Workflow</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div
-      class="position-fixed mu-container-text container d-flex flex-column flex-md-row justify-content-center justify-content-md-around align-items-center">
-      <div >
-        <h1 class="mu-heading mt-4 text-center text-md-left">
-          UX/UI Designer
-        </h1>
-        <h5 class="mu-subheading col-12 text-center text-md-left col-md-8 mt-3 pl-0">
-          Hello, I'm Milena, a passionate interface and experience from
-          Cracow.
-        </h5>
-      </div>
-      <div>
-        <img class="mu-moblie-img col-6 offset-3 col-md-12 offset-md-0 position-relative mt-5 mb-5 d-none d-md-block"
-          src="moblie-img.svg" />
-      </div>
-    </div>
-    <div class="d-flex align-items-end justify-content-center mu-arrow-container">
-      <a href="#mu-about">
-        <img class="mu-arrow-down" src="chevron-down-solid.svg" /></a>
-    </div>
-  </header>
-  <section class="mu-about pt-5 pb-5 position-relative" id="mu-about">
-    <div class="container">
-      <div class="d-flex flex-column align-items-center align-items-md-start">
-        <h1 class="text-white mu-section-heading  mu-section-margin pt-3 pb-3">
-          About me
-        </h1>
-        <h5 class="mu-section-subtext text-uppercase">
-          UX/UI Desinger / Web developer
-        </h5>
-      </div>
-      <div class="mu-container-about mt-5">
-        <p class="text-white">
-          Hi, my name is Milena
-        </p>
-        <p>
-          I started my adventure with creating websites less than a year ago.
-        </p>
-        <p>
-          Initially, I wanted to be associated with the front-end world,
-          that's why I have learned <b> HTML </b>, <b> CSS </b> skills,
-          <b> Bootrap </b> and to a small extent <b> jQuery </b> and
-          <b> JS </b>.
-        </p>
-        <p>
-          As I developed, I discovered that I was more interested in writing
-          code creating UX and UI. I approach each project individually, I am
-          trying to make the design I create unique and special.
-        </p>
-        <p class="white-text mt-5 text-md-left">
-          What characterizes me:
-        </p>
-        <div class="overflow-hidden">
-          <div class=" d-flex align-items-center overflow-hidden">
-            <p class="mu-character-description col-10 col-md-6">
-              I love exploring new ways to absorb knowledge more effectively.
+      </header>
+      <section class="mu-about pt-5 pb-5 position-relative" id="mu-about">
+        <div class="container">
+          <div
+            class="d-flex flex-column align-items-center align-items-md-start"
+          >
+            <h1
+              class="text-white mu-section-heading  mu-section-margin pt-3 pb-3"
+            >
+              About me
+            </h1>
+            <h5 class="mu-section-subtext text-uppercase">
+              UX/UI Desinger & Web developer
+            </h5>
+          </div>
+          <div class="mu-container-about mt-5">
+            <p class="text-white">Hi, my name is <b>Milena</b>.</p>
+            <p>
+              I started my adventure with creating <b>websites</b> less than a
+              year ago.
             </p>
-            <svg class="mu-character-img mb-2 mt-2" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-              viewBox="0 0 10.583 10.583">
-              <g class="svg-main" transform="translate(57.266 -205.885)" stroke="#6a6a6a" stroke-width=".5"
-                stroke-linecap="round">
-                <ellipse cx="-67.432" cy="206.761" transform="rotate(-4.236)" rx="5.041" ry="5.041" fill="#939dac"
-                  stroke-linejoin="round" paint-order="markers fill stroke" />
-                <path class="svg-pink"
-                  d="M-50.588 207.365c-.658 0-1.266.386-1.6 1.013a1.494 1.494 0 0 0-.492-.733 1.269 1.269 0 0 0-.787-.28c-.36 0-.704.158-.958.438a1.58 1.58 0 0 0-.386 1.229c-.02-.002-.041-.002-.062-.002-.148.01-.285.113-.382.284a1.19 1.19 0 0 0-.135.63c.007.148.038.292.09.419-.203.05-.386.225-.514.49a2.01 2.01 0 0 0-.174.94c.016.366.12.71.287.957.168.247.387.377.609.36a.557.557 0 0 0 .257-.09c-.02.28.068.563.247.79.18.226.434.376.709.416.23.034.46-.011.654-.13.202.415.616.677 1.07.677.396 0 .766-.2.989-.534.075.279.305.47.567.47a.577.577 0 0 0 .485-.281l.364-.063.34-.07a.455.455 0 0 0 .494-.117c.09-.093.14-.22.14-.351 0-.187-.222-.28-.26-.442-.028-.122.267-.082.362-.203a.726.726 0 0 0 .148-.446.722.722 0 0 0-.159-.459.498.498 0 0 0-.381-.19c-.04 0-.078.006-.008-.01.07-.013.232-.127.349-.298.117-.171.181-.39.181-.615 0-.342-.148-.658-.386-.825.13-.286.2-.602.2-.923 0-.544-.195-1.066-.544-1.451a1.773 1.773 0 0 0-1.313-.602z"
-                  fill="#d6d6f3" stroke-linejoin="round" paint-order="markers fill stroke" />
-                <path
-                  d="M-52.187 208.378c-.102.165-.36 1.126-.11 1.472M-52.187 208.378c-.08.188-.632 1.134-1.127 1.004M-53.225 214.097c-.092-1.339.387-1.769 1.349-1.56M-54.089 212.525c1.003-.325.882.782.876.884M-49.055 212.078c-.169.02-1.337.308-1.172-1.34M-51.166 214.24c.02-.114.529-1.286 1-.83M-55.328 210.314s.226.534.665.279"
-                  fill="none" paint-order="markers fill stroke" />
-                <path d="M-48.93 210.34s-.183.376-.345.368" fill="#fff" stroke-linejoin="round"
-                  paint-order="markers fill stroke" />
-              </g>
-            </svg>
-          </div>
-          <div class="d-flex align-items-center">
-            <p class="mu-character-description col-10 col-md-6">
-              What drives me the most is passion for my work.
+            <p>
+              Initially, I wanted to be associated with the
+              <b>front-end</b> world and that's why I learned HTML, CSS and to a
+              small extent JS with jQuery.
             </p>
-            <svg class="mu-character-img mb-2 mt-2" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-              viewBox="0 0 10.583 7.938">
-              <g class="svg-main" transform="translate(-30.386 -129.12)">
-                <ellipse ry="5.041" rx="5.041" transform="rotate(-4.236)" cy="135.36" cx="25.749" fill="#939dac"
-                  stroke="#6a6a6a" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"
-                  paint-order="markers fill stroke" />
-                <g fill="#fff" stroke="#6a6a6a" stroke-width=".694" paint-order="markers fill stroke"
-                  stroke-linecap="round">
-                  <path d="M-70.695 275.832c-2.643 4.682-6.816 3.61-8.984 0 2.188-6.274 7.038-5.83 8.984 0z"
-                    stroke-linejoin="round" paint-order="markers fill stroke"
-                    transform="matrix(.82015 0 0 .63322 97.343 -41.125)" />
-                  <path
-                    d="M-75.194 273.766l.246.843.521.135-.365.686.09.94-.474-.42-.465.447.074-.945-.378-.664.518-.166z"
-                    paint-order="markers fill stroke" transform="matrix(.82015 0 0 .63322 97.343 -41.125)" />
-                </g>
-                <g stroke-width=".892" paint-order="markers fill stroke" fill="#fff">
-                  <path d="M38.656 133.214c-1.69 2.3-4.36 1.775-5.747 0 1.4-3.083 4.502-2.865 5.747 0z"
-                    fill-opacity=".984" paint-order="markers fill stroke" />
-                  <path
-                    d="M35.783 131.02a1.297 1.806 0 0 0-.535.163.497.693 0 0 1 .14.481.497.693 0 0 1-.043.279.258.357 0 0 1 .052.215.258.357 0 0 1-.258.358.258.357 0 0 1-.215-.16.497.693 0 0 1-.034.001.497.693 0 0 1-.32-.163 1.297 1.806 0 0 0-.084.632 1.297 1.806 0 0 0 1.297 1.807 1.297 1.806 0 0 0 1.297-1.807 1.297 1.806 0 0 0-1.297-1.806zm-.005 1.179l.158.414.333.066-.234.338.058.461-.303-.206-.298.22.048-.465-.242-.326.331-.081z"
-                    paint-order="markers fill stroke" />
-                </g>
-                <ellipse class="svg-blue" cx="35.678" cy="133.088" rx="2.025" ry="1.789" fill="#d6d6f3" stroke="#6a6a6a"
-                  stroke-width=".5" stroke-linecap="round" stroke-linejoin="round" paint-order="markers fill stroke" />
-                <ellipse cx="35.678" cy="133.088" rx=".845" ry=".747" fill="#6a6a6a" stroke="#6a6a6a" stroke-width=".5"
-                  stroke-linecap="round" stroke-linejoin="round" paint-order="markers fill stroke" />
-                <ellipse cx="34.918" cy="132.19" rx=".395" ry=".349" fill="#fff" paint-order="markers fill stroke" />
-                <ellipse cy="132.597" cx="35.187" rx=".271" ry=".239" fill="#fff" paint-order="markers fill stroke" />
-              </g>
-            </svg>
-          </div>
-
-          <div class="d-flex align-items-center">
-            <p class="mu-character-description col-10 col-md-6">
-              I enjoy new challenges, there is some excitement behind them.
+            <p>
+              During development I discovered that <b>UX and UI</b> is by far
+              more interesting to me. Creating unique <b>designs</b> and
+              participating in new projects always <b>excites</b> me!
             </p>
-            <svg class="mu-character-img mb-2 mt-2" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-              viewBox="0 0 10.583 10.583">
-              <g class="svg-main" transform="translate(-92.226 -306.071)" stroke="#6a6a6a" stroke-width=".5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <ellipse ry="5.041" rx="5.041" transform="rotate(-4.236)" cy="317.716" cx="74.251" fill="#939dac"
-                  paint-order="markers fill stroke" />
-                <path class="svg-yellow"
-                  d="M94.615 308.236c.023 1.525.105 2.773.823 3.927.354.568 1.076 1.125 1.6 1.29v1.174l-.487.262v.536h2v-.536l-.486-.262v-1.175c.523-.164 1.246-.721 1.6-1.289.718-1.154.817-2.265.823-3.927H97.55z"
-                  fill="#d6d6df" paint-order="markers fill stroke" />
-              </g>
-            </svg>
-          </div>
-          <div class="d-flex align-items-center">
-            <p class="mu-character-description col-10 col-md-6">
-              While designing new products, I aim for unleashing my creative
-              spirit.
+            <p class="white-text mt-5 text-md-left">
+              Why would you choose me?
             </p>
-            <svg class="mu-character-img mb-2 mt-2" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-              viewBox="0 0 10.583 10.583">
-              <g class="svg-main" transform="translate(16.456 -300.417)" stroke="#6a6a6a" stroke-linecap="round">
-                <ellipse cx="-33.717" cy="304.049" transform="rotate(-4.236)" rx="5.041" ry="5.041" fill="#939dac"
-                  stroke-width=".5" stroke-linejoin="round" paint-order="markers fill stroke" />
-                <path class="svg-blue"
-                  d="M-96.985 204.878v11.364c.054.787.415 1.548.99 2.089.574.54 1.356.854 2.144.861a3.201 3.201 0 0 0 2.16-.825 3.203 3.203 0 0 0 1.024-2.072c.079-.918-.244-1.833-.181-2.752.042-.626.264-1.231.579-1.775.314-.544.72-1.03 1.149-1.487.86-.916 1.836-1.748 2.47-2.832a5.64 5.64 0 0 0 .324-4.958 5.64 5.64 0 0 0-3.774-3.23 5.64 5.64 0 0 0-4.848 1.085 5.64 5.64 0 0 0-2.037 4.532z"
-                  transform="matrix(.42868 0 0 .3719 28.036 227.927)" fill="#d6d6f3" stroke-width="1.252"
-                  stroke-linejoin="round" paint-order="markers fill stroke" />
-                <path
-                  d="M-103.261 194.948a.842.842 0 0 0-.074.753.842.842 0 0 0 .57.499c.251.062.525 0 .742-.141.216-.142.378-.359.478-.597.202-.477.166-1.017.119-1.532-.036-.402-.076-.816.04-1.203.12-.407.401-.744.686-1.059.285-.314.586-.627.763-1.012a1.88 1.88 0 0 0 .158-.994 1.88 1.88 0 0 0-.38-.932 1.88 1.88 0 0 0-.809-.6 1.88 1.88 0 0 0-1.001-.093"
-                  transform="matrix(.60072 0 0 .5034 49.37 209.704)" fill="none" stroke-width=".909"
-                  paint-order="markers fill stroke" />
-                <path
-                  d="M-100.142 189.372c.082-.384.055-.79-.077-1.16a2.138 2.138 0 0 0-.676-.946 2.138 2.138 0 0 0-1.073-.449 2.139 2.139 0 0 0-1.148.183 2.155 2.155 0 0 0-1.145 1.335 2.155 2.155 0 0 0 .253 1.74.759.759 0 0 1 .93.46.76.76 0 0 1-.292.892.766.766 0 0 1-.605.102"
-                  transform="matrix(.65894 0 0 .56586 55.998 197.708)" stroke-width=".819"
-                  paint-order="markers fill stroke" fill="none" />
-                <path transform="matrix(.16613 .05544 -.10822 .24988 28.93 265.127)"
-                  d="M-103.911 186.395a5.743 5.743 0 0 1 2.41 4.406 5.743 5.743 0 0 1-2.05 4.585 5.66 5.66 0 0 1-1.28.797"
-                  fill="none" stroke-width="2.294" paint-order="markers fill stroke" />
-                <path
-                  d="M-103.911 186.395a5.743 5.743 0 0 1 2.41 4.406 5.743 5.743 0 0 1-2.05 4.585 5.66 5.66 0 0 1-1.28.797"
-                  transform="matrix(.2391 .07616 -.15575 .34328 46.2 249.862)" fill="none" stroke-width="1.631"
-                  paint-order="markers fill stroke" />
-              </g>
-            </svg>
+            <div class="d-flex flex-column flex-md-row justify-content-around align-items-center">
+              <div class="overflow-hidden">
+                <div class=" d-flex align-items-center overflow-hidden">
+                  <svg
+                    class="mu-character-img mb-2 mt-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewbox="0 0 10.583 10.583"
+                  >
+                    <g
+                      class="svg-main"
+                      transform="translate(57.266 -205.885)"
+                      stroke="#6a6a6a"
+                      stroke-width=".5"
+                      stroke-linecap="round"
+                    >
+                      <ellipse
+                        cx="-67.432"
+                        cy="206.761"
+                        transform="rotate(-4.236)"
+                        rx="5.041"
+                        ry="5.041"
+                        fill="#939dac"
+                        stroke-linejoin="round"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        class="svg-pink"
+                        d="M-50.588 207.365c-.658 0-1.266.386-1.6 1.013a1.494 1.494 0 0 0-.492-.733 1.269 1.269 0 0 0-.787-.28c-.36 0-.704.158-.958.438a1.58 1.58 0 0 0-.386 1.229c-.02-.002-.041-.002-.062-.002-.148.01-.285.113-.382.284a1.19 1.19 0 0 0-.135.63c.007.148.038.292.09.419-.203.05-.386.225-.514.49a2.01 2.01 0 0 0-.174.94c.016.366.12.71.287.957.168.247.387.377.609.36a.557.557 0 0 0 .257-.09c-.02.28.068.563.247.79.18.226.434.376.709.416.23.034.46-.011.654-.13.202.415.616.677 1.07.677.396 0 .766-.2.989-.534.075.279.305.47.567.47a.577.577 0 0 0 .485-.281l.364-.063.34-.07a.455.455 0 0 0 .494-.117c.09-.093.14-.22.14-.351 0-.187-.222-.28-.26-.442-.028-.122.267-.082.362-.203a.726.726 0 0 0 .148-.446.722.722 0 0 0-.159-.459.498.498 0 0 0-.381-.19c-.04 0-.078.006-.008-.01.07-.013.232-.127.349-.298.117-.171.181-.39.181-.615 0-.342-.148-.658-.386-.825.13-.286.2-.602.2-.923 0-.544-.195-1.066-.544-1.451a1.773 1.773 0 0 0-1.313-.602z"
+                        fill="#d6d6f3"
+                        stroke-linejoin="round"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        d="M-52.187 208.378c-.102.165-.36 1.126-.11 1.472M-52.187 208.378c-.08.188-.632 1.134-1.127 1.004M-53.225 214.097c-.092-1.339.387-1.769 1.349-1.56M-54.089 212.525c1.003-.325.882.782.876.884M-49.055 212.078c-.169.02-1.337.308-1.172-1.34M-51.166 214.24c.02-.114.529-1.286 1-.83M-55.328 210.314s.226.534.665.279"
+                        fill="none"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        d="M-48.93 210.34s-.183.376-.345.368"
+                        fill="#fff"
+                        stroke-linejoin="round"
+                        paint-order="markers fill stroke"
+                      />
+                    </g>
+                  </svg>
+                  <p
+                    class="mu-character-description col-10 pb-0 mb-0 "
+                  >
+                    I love exploring new ways to absorb knowledge more
+                    effectively.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <svg
+                    class="mu-character-img mb-2 mt-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewbox="0 0 10.583 7.938"
+                  >
+                    <g class="svg-main" transform="translate(-30.386 -129.12)">
+                      <ellipse
+                        ry="5.041"
+                        rx="5.041"
+                        transform="rotate(-4.236)"
+                        cy="135.36"
+                        cx="25.749"
+                        fill="#939dac"
+                        stroke="#6a6a6a"
+                        stroke-width=".5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        paint-order="markers fill stroke"
+                      />
+                      <g
+                        fill="#fff"
+                        stroke="#6a6a6a"
+                        stroke-width=".694"
+                        paint-order="markers fill stroke"
+                        stroke-linecap="round"
+                      >
+                        <path
+                          d="M-70.695 275.832c-2.643 4.682-6.816 3.61-8.984 0 2.188-6.274 7.038-5.83 8.984 0z"
+                          stroke-linejoin="round"
+                          paint-order="markers fill stroke"
+                          transform="matrix(.82015 0 0 .63322 97.343 -41.125)"
+                        />
+                        <path
+                          d="M-75.194 273.766l.246.843.521.135-.365.686.09.94-.474-.42-.465.447.074-.945-.378-.664.518-.166z"
+                          paint-order="markers fill stroke"
+                          transform="matrix(.82015 0 0 .63322 97.343 -41.125)"
+                        />
+                      </g>
+                      <g
+                        stroke-width=".892"
+                        paint-order="markers fill stroke"
+                        fill="#fff"
+                      >
+                        <path
+                          d="M38.656 133.214c-1.69 2.3-4.36 1.775-5.747 0 1.4-3.083 4.502-2.865 5.747 0z"
+                          fill-opacity=".984"
+                          paint-order="markers fill stroke"
+                        />
+                        <path
+                          d="M35.783 131.02a1.297 1.806 0 0 0-.535.163.497.693 0 0 1 .14.481.497.693 0 0 1-.043.279.258.357 0 0 1 .052.215.258.357 0 0 1-.258.358.258.357 0 0 1-.215-.16.497.693 0 0 1-.034.001.497.693 0 0 1-.32-.163 1.297 1.806 0 0 0-.084.632 1.297 1.806 0 0 0 1.297 1.807 1.297 1.806 0 0 0 1.297-1.807 1.297 1.806 0 0 0-1.297-1.806zm-.005 1.179l.158.414.333.066-.234.338.058.461-.303-.206-.298.22.048-.465-.242-.326.331-.081z"
+                          paint-order="markers fill stroke"
+                        />
+                      </g>
+                      <ellipse
+                        class="svg-blue"
+                        cx="35.678"
+                        cy="133.088"
+                        rx="2.025"
+                        ry="1.789"
+                        fill="#d6d6f3"
+                        stroke="#6a6a6a"
+                        stroke-width=".5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        paint-order="markers fill stroke"
+                      />
+                      <ellipse
+                        cx="35.678"
+                        cy="133.088"
+                        rx=".845"
+                        ry=".747"
+                        fill="#6a6a6a"
+                        stroke="#6a6a6a"
+                        stroke-width=".5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        paint-order="markers fill stroke"
+                      />
+                      <ellipse
+                        cx="34.918"
+                        cy="132.19"
+                        rx=".395"
+                        ry=".349"
+                        fill="#fff"
+                        paint-order="markers fill stroke"
+                      />
+                      <ellipse
+                        cy="132.597"
+                        cx="35.187"
+                        rx=".271"
+                        ry=".239"
+                        fill="#fff"
+                        paint-order="markers fill stroke"
+                      />
+                    </g>
+                  </svg>
+                  <p class="mu-character-description col-10 pb-0 mb-0">
+                    What drives me the most is passion for my work.
+                  </p>
+                </div>
+
+                <div class="d-flex align-items-center">
+                  <svg
+                    class="mu-character-img mb-2 mt-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewbox="0 0 10.583 10.583"
+                  >
+                    <g
+                      class="svg-main"
+                      transform="translate(-92.226 -306.071)"
+                      stroke="#6a6a6a"
+                      stroke-width=".5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <ellipse
+                        ry="5.041"
+                        rx="5.041"
+                        transform="rotate(-4.236)"
+                        cy="317.716"
+                        cx="74.251"
+                        fill="#939dac"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        class="svg-yellow"
+                        d="M94.615 308.236c.023 1.525.105 2.773.823 3.927.354.568 1.076 1.125 1.6 1.29v1.174l-.487.262v.536h2v-.536l-.486-.262v-1.175c.523-.164 1.246-.721 1.6-1.289.718-1.154.817-2.265.823-3.927H97.55z"
+                        fill="#d6d6df"
+                        paint-order="markers fill stroke"
+                      />
+                    </g>
+                  </svg>
+                  <p class="mu-character-description col-10 pb-0 mb-0">
+                    I enjoy new challenges, there is some excitement behind
+                    them.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <svg
+                    class="mu-character-img mb-2 mt-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewbox="0 0 10.583 10.583"
+                  >
+                    <g
+                      class="svg-main"
+                      transform="translate(16.456 -300.417)"
+                      stroke="#6a6a6a"
+                      stroke-linecap="round"
+                    >
+                      <ellipse
+                        cx="-33.717"
+                        cy="304.049"
+                        transform="rotate(-4.236)"
+                        rx="5.041"
+                        ry="5.041"
+                        fill="#939dac"
+                        stroke-width=".5"
+                        stroke-linejoin="round"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        class="svg-blue"
+                        d="M-96.985 204.878v11.364c.054.787.415 1.548.99 2.089.574.54 1.356.854 2.144.861a3.201 3.201 0 0 0 2.16-.825 3.203 3.203 0 0 0 1.024-2.072c.079-.918-.244-1.833-.181-2.752.042-.626.264-1.231.579-1.775.314-.544.72-1.03 1.149-1.487.86-.916 1.836-1.748 2.47-2.832a5.64 5.64 0 0 0 .324-4.958 5.64 5.64 0 0 0-3.774-3.23 5.64 5.64 0 0 0-4.848 1.085 5.64 5.64 0 0 0-2.037 4.532z"
+                        transform="matrix(.42868 0 0 .3719 28.036 227.927)"
+                        fill="#d6d6f3"
+                        stroke-width="1.252"
+                        stroke-linejoin="round"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        d="M-103.261 194.948a.842.842 0 0 0-.074.753.842.842 0 0 0 .57.499c.251.062.525 0 .742-.141.216-.142.378-.359.478-.597.202-.477.166-1.017.119-1.532-.036-.402-.076-.816.04-1.203.12-.407.401-.744.686-1.059.285-.314.586-.627.763-1.012a1.88 1.88 0 0 0 .158-.994 1.88 1.88 0 0 0-.38-.932 1.88 1.88 0 0 0-.809-.6 1.88 1.88 0 0 0-1.001-.093"
+                        transform="matrix(.60072 0 0 .5034 49.37 209.704)"
+                        fill="none"
+                        stroke-width=".909"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        d="M-100.142 189.372c.082-.384.055-.79-.077-1.16a2.138 2.138 0 0 0-.676-.946 2.138 2.138 0 0 0-1.073-.449 2.139 2.139 0 0 0-1.148.183 2.155 2.155 0 0 0-1.145 1.335 2.155 2.155 0 0 0 .253 1.74.759.759 0 0 1 .93.46.76.76 0 0 1-.292.892.766.766 0 0 1-.605.102"
+                        transform="matrix(.65894 0 0 .56586 55.998 197.708)"
+                        stroke-width=".819"
+                        paint-order="markers fill stroke"
+                        fill="none"
+                      />
+                      <path
+                        transform="matrix(.16613 .05544 -.10822 .24988 28.93 265.127)"
+                        d="M-103.911 186.395a5.743 5.743 0 0 1 2.41 4.406 5.743 5.743 0 0 1-2.05 4.585 5.66 5.66 0 0 1-1.28.797"
+                        fill="none"
+                        stroke-width="2.294"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        d="M-103.911 186.395a5.743 5.743 0 0 1 2.41 4.406 5.743 5.743 0 0 1-2.05 4.585 5.66 5.66 0 0 1-1.28.797"
+                        transform="matrix(.2391 .07616 -.15575 .34328 46.2 249.862)"
+                        fill="none"
+                        stroke-width="1.631"
+                        paint-order="markers fill stroke"
+                      />
+                    </g>
+                  </svg>
+                  <p class="mu-character-description col-10 pb-0 mb-0">
+                    You bring the idea - I listen, I care..
+                  </p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <svg
+                    class="mu-character-img mb-2 mt-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="40"
+                    height="40"
+                    viewbox="0 0 10.583 10.583"
+                  >
+                    <defs>
+                      <linearGradient
+                        xlink:href="#a"
+                        id="b"
+                        x1="-70.522"
+                        y1="143.821"
+                        x2="-70.523"
+                        y2="150.553"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="matrix(1.06702 0 0 1.31533 182.17 58.016)"
+                      />
+                      <linearGradient id="a">
+                        <stop offset="0" stop-color="#d6d6f3" />
+                        <stop
+                          offset="1"
+                          stop-color="#d6d6f3"
+                          stop-opacity="0"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <g
+                      class="svg-main"
+                      transform="translate(-101.406 -251.584)"
+                    >
+                      <ellipse
+                        cx="87.431"
+                        cy="264.056"
+                        transform="rotate(-4.236)"
+                        rx="5.041"
+                        ry="5.041"
+                        fill="#939dac"
+                        stroke="#6a6a6a"
+                        stroke-width=".5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        d="M106.67 252.628c-1.793.053-3.534 1.19-3.856 3.414h7.713c-.323-2.223-2.064-3.361-3.857-3.414z"
+                        fill="url(#b)"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        class="svg-yellow"
+                        d="M106.674 253.322c-1.581.038-3.114.934-3.055 2.694.068 2.064 2.364 1.336 2.569 3.815.144.046.308.074.486.085.178-.011.343-.04.487-.085.205-2.479 2.5-1.751 2.57-3.815.057-1.76-1.475-2.656-3.057-2.694z"
+                        fill="#d6d6df"
+                        stroke="#6a6a6a"
+                        stroke-width=".5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        d="M105.55 256.055c-.179.005-.347.018-.505.11-.152.078-.296.227-.316.377-.015.107.062.214.173.288.211.142.495.22.773.28.253.052.514.086.776.107l.004-.673a1.05 1.05 0 0 0-.57-.443 1.052 1.052 0 0 0-.335-.046zm2.3 0a1.045 1.045 0 0 0-.862.489c.002.224.004.449.004.673.424-.036.851-.098 1.234-.233.188-.069.38-.162.46-.304.063-.11.019-.236-.071-.334a1.05 1.05 0 0 0-.227-.186c-.144-.082-.349-.108-.54-.105zm-.9 1.184c-.156.011-.311.018-.467.02v1.982h.48c.012-.309.006-.619.007-.928 0-.358-.003-.717-.004-1.075-.005 0-.01 0-.016.002z"
+                        fill="none"
+                        stroke="#6a6a6a"
+                        stroke-width=".5"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        d="M105.817 258.625c-.31 0-.56.123-.56.277 0 .153.25.277.56.277h1.714c.31 0 .56-.124.56-.277 0-.154-.25-.277-.56-.277zm.202.655c-.31 0-.56.101-.56.227 0 .125.25.226.56.226h.13a.467.467 0 0 0-.033.115c-.306.002-.551.093-.551.208 0 .113.241.203.543.207.007.276.253.497.559.497h.014c.306 0 .552-.221.559-.497.302-.003.544-.094.544-.207 0-.115-.246-.206-.552-.208a.478.478 0 0 0-.033-.115h.13c.31 0 .56-.1.56-.226s-.25-.227-.56-.227z"
+                        fill="#6a6a6a"
+                        stroke="#6a6a6a"
+                        stroke-width=".5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        paint-order="markers fill stroke"
+                      />
+                    </g>
+                  </svg>
+                  <p class="mu-character-description col-10 pb-0 mb-0">
+                    While designing new products, I aim for unleashing my
+                    creative spirit.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <svg
+                    class="mu-character-img mb-2 mt-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewbox="0 0 10.583 10.583"
+                  >
+                    <g
+                      class="svg-main"
+                      transform="translate(-39.324 -538.351)"
+                      stroke="#6a6a6a"
+                      stroke-width=".5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <ellipse
+                        ry="5.041"
+                        rx="5.041"
+                        transform="rotate(-4.236)"
+                        cy="545.453"
+                        cx="4.334"
+                        fill="#939dac"
+                        paint-order="markers fill stroke"
+                      />
+                      <path
+                        class="svg-pink"
+                        d="M42.806 540.276a1.925 2.2 0 0 0-1.925 2.2 1.925 2.2 0 0 0 .667 1.664l3.08 3.538 3.073-3.556-.001-.001a1.925 2.2 0 0 0 .65-1.646 1.925 2.2 0 0 0-1.924-2.2 1.925 2.2 0 0 0-1.81 1.457 1.925 2.2 0 0 0-1.81-1.456z"
+                        fill="#d6d6f3"
+                        paint-order="fill markers stroke"
+                      />
+                    </g>
+                  </svg>
+                  <p class="mu-character-description col-10 pb-0 mb-0">
+                    Empathy is important to me, so is kindness :).
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 offset-md-0">
+                <img src="img-desktop.svg" />
+              </div>
+            </div>
           </div>
-          <div class="d-flex align-items-center">
-            <p class="mu-character-description col-10 col-md-6">
-              While designing new products, I aim for unleashing my creative
-              spirit.
-            </p>
-            <svg class="mu-character-img mb-2 mt-2" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 10.583 10.583">
-              <defs>
-                <linearGradient xlink:href="#a" id="b" x1="-70.522" y1="143.821" x2="-70.523" y2="150.553"
-                  gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.06702 0 0 1.31533 182.17 58.016)" />
-                <linearGradient id="a">
-                  <stop offset="0" stop-color="#d6d6f3" />
-                  <stop offset="1" stop-color="#d6d6f3" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-              <g class="svg-main" transform="translate(-101.406 -251.584)">
-                <ellipse cx="87.431" cy="264.056" transform="rotate(-4.236)" rx="5.041" ry="5.041" fill="#939dac"
-                  stroke="#6a6a6a" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"
-                  paint-order="markers fill stroke" />
-                <path d="M106.67 252.628c-1.793.053-3.534 1.19-3.856 3.414h7.713c-.323-2.223-2.064-3.361-3.857-3.414z"
-                  fill="url(#b)" paint-order="markers fill stroke" />
-                <path class="svg-yellow"
-                  d="M106.674 253.322c-1.581.038-3.114.934-3.055 2.694.068 2.064 2.364 1.336 2.569 3.815.144.046.308.074.486.085.178-.011.343-.04.487-.085.205-2.479 2.5-1.751 2.57-3.815.057-1.76-1.475-2.656-3.057-2.694z"
-                  fill="#d6d6df" stroke="#6a6a6a" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"
-                  paint-order="markers fill stroke" />
-                <path
-                  d="M105.55 256.055c-.179.005-.347.018-.505.11-.152.078-.296.227-.316.377-.015.107.062.214.173.288.211.142.495.22.773.28.253.052.514.086.776.107l.004-.673a1.05 1.05 0 0 0-.57-.443 1.052 1.052 0 0 0-.335-.046zm2.3 0a1.045 1.045 0 0 0-.862.489c.002.224.004.449.004.673.424-.036.851-.098 1.234-.233.188-.069.38-.162.46-.304.063-.11.019-.236-.071-.334a1.05 1.05 0 0 0-.227-.186c-.144-.082-.349-.108-.54-.105zm-.9 1.184c-.156.011-.311.018-.467.02v1.982h.48c.012-.309.006-.619.007-.928 0-.358-.003-.717-.004-1.075-.005 0-.01 0-.016.002z"
-                  fill="none" stroke="#6a6a6a" stroke-width=".5" paint-order="markers fill stroke" />
-                <path
-                  d="M105.817 258.625c-.31 0-.56.123-.56.277 0 .153.25.277.56.277h1.714c.31 0 .56-.124.56-.277 0-.154-.25-.277-.56-.277zm.202.655c-.31 0-.56.101-.56.227 0 .125.25.226.56.226h.13a.467.467 0 0 0-.033.115c-.306.002-.551.093-.551.208 0 .113.241.203.543.207.007.276.253.497.559.497h.014c.306 0 .552-.221.559-.497.302-.003.544-.094.544-.207 0-.115-.246-.206-.552-.208a.478.478 0 0 0-.033-.115h.13c.31 0 .56-.1.56-.226s-.25-.227-.56-.227z"
-                  fill="#6a6a6a" stroke="#6a6a6a" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round"
-                  paint-order="markers fill stroke" />
-              </g>
-            </svg>
+        </div>
+      </section>
+      <section
+        class="mu-workflow bg-white pt-5 pb-5 position-relative"
+        id="mu-workflow"
+      >
+        <div class="container">
+          <div class="row justify-content-center justify-content-md-start ">
+            <h2 class="section-text  mu-section-heading pb-5">How I work</h2>
           </div>
-          <div class="d-flex align-items-center">
-            <p class="mu-character-description col-10 col-md-6">
-              Empathy is important to me, so is kindness :).
-            </p>
-            <svg class="mu-character-img mb-2 mt-2" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-              viewBox="0 0 10.583 10.583">
-              <g class="svg-main" transform="translate(-39.324 -538.351)" stroke="#6a6a6a" stroke-width=".5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <ellipse ry="5.041" rx="5.041" transform="rotate(-4.236)" cy="545.453" cx="4.334" fill="#939dac"
-                  paint-order="markers fill stroke" />
-                <path class="svg-pink"
-                  d="M42.806 540.276a1.925 2.2 0 0 0-1.925 2.2 1.925 2.2 0 0 0 .667 1.664l3.08 3.538 3.073-3.556-.001-.001a1.925 2.2 0 0 0 .65-1.646 1.925 2.2 0 0 0-1.924-2.2 1.925 2.2 0 0 0-1.81 1.457 1.925 2.2 0 0 0-1.81-1.456z"
-                  fill="#d6d6f3" paint-order="fill markers stroke" />
-              </g>
-            </svg>
+          <div class="d-flex flex-column flex-md-row mt-3">
+            <div
+              class="d-flex pt-md-5 flex-column align-items-center justify-content-center"
+            >
+              <h3 class="mu-workflow-heading">Research</h3>
+              <div class="mu-animation" id="computer"></div>
+
+              <p class="mu-animation-desc pt-4 text-center col-10">
+                Looking for similar websites or applications, drawing based on inspiration from the other projects.
+              </p>
+            </div>
+            <div
+              class="d-flex pt-5 flex-column align-items-center justify-content-center"
+            ><div class="d-flex flex-column align-items-center">
+              <h3 class="mu-workflow-heading">Prototype</h3>
+              <div class="mu-animation" id="prototype"></div>
+            </div>
+              <p class="mu-animation-desc pt-4 text-center col-10">
+                Creating a prototype (mock-up). Choosing
+                colors, fonts, graphics. Composing up a visual guideline of the project.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-md-row">
+            <div
+              class="d-flex pt-5 flex-column align-items-center justify-content-center"
+            ><div class="d-flex flex-column align-items-center">
+              <h3 class="mu-workflow-heading">Demo & Feedback</h3>
+              <div class="mu-animation" id="anim"></div>
+            </div>
+              <p class="mu-animation-desc pt-4 text-center col-10 offset-1">
+                Presenting first design version to the client.
+                Applying design changes based on feedback. Increment and improve.
+              </p>
+            </div>
+            <div
+              class="d-flex pt-5 flex-column align-items-center justify-content-center"
+            >
+            
+              <h3 class="mu-workflow-heading">Implementation</h3>
+              <div class="mu-animation" id="programing"></div>
+
+              <p class="mu-animation-desc pt-4 text-center col-10">
+                After client approves final design, I am picking up appropriate technologies and starting development. 
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="mu-skills pt-5 pb-5 position-relative" id="mu-skills">
-    <div class="container">
-      <div class="d-flex flex-column align-items-center align-items-md-start">
-        <h1 class="white-text mu-section-heading  mu-section-margin pt-3 pb-3">
-          My skills
-        </h1>
-        <h5 class="mu-section-subtext text-uppercase">
-          Web development / UX / UI
-        </h5>
-      </div>
-      <p class="section-text text-white mt-5">Technology</p>
-      <div class="row d-flex justify-content-between mt-5">
-        <div class="mu-technology-container d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInLeft"
-          data-wow-delay="0.1s">
-          <img class="mu-technology-img" src="html5_svg.svg" />
-          <h5 class="technology-title text-uppercase mt-3">HTML</h5>
-        </div>
-        <div class="d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.2s">
-          <img class="mu-technology-img" src="css3_svg.svg" />
-          <p class="technology-title text-uppercase mt-3">CSS</p>
-        </div>
-        <div class="d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.3s">
-          <img class="mu-technology-img" src="js_svg.svg" />
-          <p class="technology-title text-uppercase mt-3">JS</p>
-        </div>
-        <div class="d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.4s">
-          <img class="mu-technology-img" src="jquery_svg.svg" />
-          <p class="technology-title text-uppercase mt-3">jQuery</p>
-        </div>
-        <div class="d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.5s">
-          <img class="mu-technology-img" src="bootstrap_svg.svg" />
-          <p class="technology-title text-uppercase mt-3">bootstrap</p>
-        </div>
-        <div class="d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.6s">
-          <img class="mu-technology-img" src="technology-svg/rwd.svg" />
-          <p class="technology-title text-uppercase mt-3">RWD</p>
-        </div>
-        <div class="d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.7s">
-          <img class="mu-technology-img" src="seo_svg.svg" />
-          <p class="technology-title text-uppercase mt-3">SEO</p>
-        </div>
-
-        <div class="d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.8s">
-          <img class="mu-technology-img" src="git_svg.svg" />
-          <p class="technology-title text-uppercase mt-3">Git</p>
-        </div>
-        <div class="d-flex flex-column align-items-center col-4  col-lg-2"></div>
-
-        <div class="d-flex flex-column align-items-center d-none d-lg-block  col-lg-2"></div>
-        <div class="d-flex flex-column align-items-center d-none d-lg-block  col-lg-2"></div>
-        <div class="d-flex flex-column align-items-center d-none d-lg-block  col-lg-2"></div>
-      </div>
-      <p class="section-text text-white mt-5">Programs</p>
-      <div class="row d-flex pt-5 justify-content-start overflow-hidden">
-        <div class="d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInRight" data-wow-delay="0.1s">
-          <img class="mu-programs-img" src="programs-logo/adobe-illustrator-cc.svg" />
-          <p class="technology-title text-uppercase text-center mt-3 ">
-            adobe illustrator
-          </p>
-        </div>
-        <div class="d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInRight" data-wow-delay="0.2s">
-          <img class="mu-programs-img" src="programs-logo/photoshop-cc.svg" />
-          <p class="technology-title text-uppercase text-center mt-3 ">
-            adobe photoshop
-          </p>
-        </div>
-        <div class="d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInRight" data-wow-delay="0.3s">
-          <img class="mu-programs-img" src="programs-logo/after-effects-cc.svg" />
-          <p class="technology-title text-uppercase text-center mt-3 ">
-            after efects
-          </p>
-        </div>
-        <div class="d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInRight" data-wow-delay="0.4s">
-          <img class="mu-programs-img" src="programs-logo/adobe-xd.svg" />
-          <p class="technology-title text-uppercase text-center mt-3 ">
-            adobe xD
-          </p>
-        </div>
-        <div class="d-flex flex-column align-items-center col-4 col-lg-2 wow fadeInRight" data-wow-delay="0.5s">
-          <img class="mu-programs-img" src="programs-logo/inkscape-logo.svg" />
-          <p class="technology-title text-uppercase text-center mt-3 ">
-            inkscape
-          </p>
-        </div>
-        <div class="d-flex flex-column align-items-center d-none d-lg-block  col-lg-2"></div>
-        <div class="d-flex flex-column align-items-center d-none d-lg-block  col-lg-2"></div>
-        <div class="d-flex flex-column align-items-center d-none d-lg-block  col-lg-2"></div>
-        <div class="d-flex flex-column align-items-center d-none d-lg-block  col-lg-2"></div>
-        <div class="d-flex flex-column align-items-center d-none d-lg-block  col-lg-2"></div>
-        <div class="d-flex flex-column align-items-center d-none d-lg-block  col-lg-2"></div>
-        <div class="d-flex flex-column align-items-center d-none d-lg-block  col-lg-2"></div>
-      </div>
-    </div>
-  </section>
-  <section class="mu-projects position-relative" id="mu-projects">
-    <div class="container">
-      <div class="row justify-content-center justify-content-md-start">
-        <h2 class="white-text mu-section-heading pl-3 pt-5 pb-5">Projects</h2>
-        
-      </div>
-    </div>
-    <div class="d-flex flex-column flex-md-row">
-      <div class="content">
-        <a href="https://salonmadena.pl/" target="_blank">
-          <div class="content-overlay"></div>
-          <img class="content-image" src="hairdresser.jpg" />
-          <div class="content-details text-center fadeIn-bottom fadeIn-left">
-            <h3 class="text-uppercase">hairdresser's salon</h3>
+      </section>
+      <section class="mu-projects position-relative" id="mu-projects">
+          <div class="container">
+            <div class="row justify-content-center justify-content-md-start">
+              <h2 class="white-text mu-section-heading pl-3 pt-5 pb-5">
+                Projects
+              </h2>
+            </div>
           </div>
-        </a>
-      </div>
-      <div class="content">
-        <a href="https://fervent-wozniak-52d09c.netlify.com/" target="_blank">
-          <div class="content-overlay"></div>
-          <img class="content-image" src="portfolio.jpg" />
-          <div class="content-details text-center fadeIn-bottom fadeIn-right">
-            <h3 class="text-uppercase">Portfolio old version</h3>
+          <div class="d-flex flex-column flex-md-row">
+            <div class="content">
+              <a href="https://salonmadena.pl/" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="hairdresser.jpg" />
+                <div
+                  class="content-details text-center fadeIn-bottom fadeIn-left"
+                >
+                  <h3 class="text-uppercase">hairdresser's salon</h3>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a
+                href="https://fervent-wozniak-52d09c.netlify.com/"
+                target="_blank"
+              >
+                <div class="content-overlay"></div>
+                <img class="content-image" src="portfolio.jpg" />
+                <div
+                  class="content-details text-center fadeIn-bottom fadeIn-right"
+                >
+                  <h3 class="text-uppercase">Portfolio old version</h3>
+                </div>
+              </a>
+            </div>
           </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="mu-workflow bg-white pt-5 pb-5 position-relative" id="mu-workflow">
-    <div class="container">
-      <div class="row justify-content-center justify-content-md-start ">
-        <h2 class="section-text  mu-section-heading pb-5">Workflow</h2>
-      </div>
-      <div class="d-flex flex-column flex-md-row mt-3">
-        <div class="d-flex pt-md-5 flex-column align-items-center justify-content-center">
-          <h3 class="mu-workflow-heading">Details & Inspirations</h3>
-          <div class="mu-animation" id="computer"></div>
+        </section>
+      <footer class="footer position-sticky">
+        <div class="d-flex justify-content-center pt-5 pb-5">
+          <img class="mu-logo" src="logo_new.svg" />
+        </div>
 
-          <p class="mu-animation-desc pt-4 text-center col-10">
-            Arranging details with the client, looking for similar websites or
-            applications, drawing inspiration from the projects found.
+        <div class="d-flex justify-content-center">
+          <p class="mu-copyright text-white pl-3 mb-0 text-center">
+            © Copyright 2019 | Milena Ulman - UX Designer - UI Designer | All
+            Rights Reserved
           </p>
         </div>
-        <div class="d-flex pt-5 flex-column align-items-center justify-content-center">
-          <h3 class="mu-workflow-heading">Creating mock-up</h3>
-          <div class="mu-animation" id="prototype"></div>
-
-          <p class="mu-animation-desc pt-4 text-center col-10">
-            Creating a basic representation of a page / application. Choice of
-            colors, fonts, photos. Implementation of the logo and necessary
-            graphics.
-          </p>
+        <div class="d-flex justify-content-center pr-3 pt-3 pb-3">
+          <svg
+            class="mu-social-footer pl-1"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.2"
+            viewBox="0 0 2350 2314.8"
+          >
+            <path
+              class="git"
+              d="M1175 0C525.8 0 0 525.8 0 1175c0 552.2 378.9 1010.5 890.1 1139.7-5.9-14.7-8.8-35.3-8.8-55.8v-199.8H734.4c-79.3 0-152.8-35.2-185.1-99.9-38.2-70.5-44.1-179.2-141-246.8-29.4-23.5-5.9-47 26.4-44.1 61.7 17.6 111.6 58.8 158.6 120.4 47 61.7 67.6 76.4 155.7 76.4 41.1 0 105.7-2.9 164.5-11.8 32.3-82.3 88.1-155.7 155.7-190.9-393.6-47-581.6-240.9-581.6-505.3 0-114.6 49.9-223.3 132.2-317.3-26.4-91.1-61.7-279.1 11.8-352.5 176.3 0 282 114.6 308.4 143.9 88.1-29.4 185.1-47 284.9-47 102.8 0 196.8 17.6 284.9 47 26.4-29.4 132.2-143.9 308.4-143.9 70.5 70.5 38.2 261.4 8.8 352.5 82.3 91.1 129.3 202.7 129.3 317.3 0 264.4-185.1 458.3-575.7 499.4 108.7 55.8 185.1 214.4 185.1 331.9V2256c0 8.8-2.9 17.6-2.9 26.4C2021 2123.8 2350 1689.1 2350 1175 2350 525.8 1824.2 0 1175 0z"
+              fill="#4d4d4d"
+            />
+          </svg>
+          <svg
+            class="mu-social-footer pl-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="2500"
+            height="2500"
+            viewbox="7.025 7.025 497.951 497.95"
+          >
+            <path
+              class="linkedin"
+              d="M256 7.025C118.494 7.025 7.025 118.494 7.025 256S118.494 504.975 256 504.975 504.976 393.506 504.976 256C504.975 118.494 393.504 7.025 256 7.025zm-66.427 369.343h-54.665V199.761h54.665v176.607zM161.98 176.633c-17.853 0-32.326-14.591-32.326-32.587 0-17.998 14.475-32.588 32.326-32.588s32.324 14.59 32.324 32.588c.001 17.997-14.472 32.587-32.324 32.587zm232.45 199.735h-54.4v-92.704c0-25.426-9.658-39.619-29.763-39.619-21.881 0-33.312 14.782-33.312 39.619v92.704h-52.43V199.761h52.43v23.786s15.771-29.173 53.219-29.173c37.449 0 64.257 22.866 64.257 70.169l-.001 111.825z"
+              fill="#4d4d4d"
+            />
+          </svg>
         </div>
-      </div>
-      <div class="d-flex flex-column flex-md-row">
-        <div class="d-flex pt-5 flex-column align-items-center justify-content-center">
-          <h3 class="mu-workflow-heading">Client approval</h3>
-          <div class="mu-animation" id="anim"></div>
-
-          <p class="mu-animation-desc pt-4 text-center col-10">
-            Presenting the first version of the project to the client.
-            Determining design changes.
-          </p>
-        </div>
-        <div class="d-flex pt-5 flex-column align-items-center justify-content-center">
-          <h3 class="mu-workflow-heading">Develop</h3>
-          <div class="mu-animation" id="programing"></div>
-
-          <p class="mu-animation-desc pt-4 text-center col-10">
-            After obtaining the final client approval, the creation process
-            follows by writing HTML, CSS and JS code.
-          </p>
-        </div>
-      </div>
+      </footer>
     </div>
-  </section>
-  <footer class="footer position-sticky">
-    <div class="d-flex justify-content-center pt-5 pb-5">
-      <img class="mu-logo" src="logo_new.svg" />
-    </div>
-  
-    <div class="footer-copyright text-center pt-2 pb-2 d-flex  justify-content-between align-items-center bg-dark">
-      <div class="d-flex justify-content-start">
-        <p class="mu-copyright text-white pl-3 mb-0">
-          © 2019 Copyright: Milena Ulman
-        </p>
-      </div>
-      <div class="d-flex justify-content-end pr-3">
-        <img class="mu-social-footer" src="github-1.svg" />
-        <img class="mu-social-footer" src="linkedin-icon.svg" />
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.7/lottie_html.js"></script>
-  <script src="./script.js"></script>
-  <script src="/animations/lottie.js"></script>
-  <script src="/animations/computer.js"></script>
-  <script src="/animations/programing.js"></script>
-  <script src="animations/prototype.js"></script>
-  <script src="animations/loader.js"></script>
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <script type="text/javascript" src="index.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.7/lottie_html.js"></script>
+    <script src="./script.js"></script>
+    <script src="/animations/lottie.js"></script>
+    <script src="/animations/computer.js"></script>
+    <script src="/animations/programing.js"></script>
+    <script src="animations/prototype.js"></script>
+    <script src="animations/loader.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
 </html>
