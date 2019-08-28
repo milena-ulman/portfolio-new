@@ -33,15 +33,6 @@ $(window).scroll(function() {
     $(".mu-arrow-down").removeClass("mu-hidden");
   }
 });
-$(window).scroll(function() {
-  const scroll = $(window).scrollTop();
-
-  if (scroll > 1000) {
-    $(".footer").addClass("mu-top");
-  } else {
-    $(".footer").removeClass("mu-top");
-  }
-});
 $(".navbar-nav>li>a").on("click", function() {
   $(".navbar-collapse").collapse("hide");
 });

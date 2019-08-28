@@ -15,7 +15,8 @@ header {
   background: white;
   height: 100vh;
   width: 100%;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 .mu-about,
 .mu-projects,
@@ -340,4 +341,7 @@ nav ul li a.current {
 }
 .margin-left {
   margin-left: -9px !important;
+}
+.mu-top {
+  z-index: 100000;
 }
