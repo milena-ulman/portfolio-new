@@ -8,10 +8,14 @@ a {
 b {
   color: #ff7ab0;
 }
+p {
+  margin-bottom: 0;
+}
 header {
   background: white;
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 .mu-about,
 .mu-projects,
@@ -182,11 +186,24 @@ header {
 .footer {
   z-index: 100;
 }
+.mu-technolgy-icon {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: filter 0.3s ease-in-out;
+}
+.mu-technolgy-icon:hover {
+  filter: grayscale(0%);
+}
 .mu-social-footer {
   width: 30px;
   height: 30px;
   cursor: pointer;
   transition: fill 0.3s ease-in-out;
+}
+.mu-copyright {
+  font-size: 12px;
 }
 .mu-character-img {
   width: 50px;
@@ -312,16 +329,22 @@ nav ul li a.current {
   visibility: hidden;
 }
 .mu-top {
-  bottom: 0;
+  z-index: 100;
 }
 .mu-loader {
   width: 100%;
   height: 100vh;
-  background: black;
+  background: white;
   position: relative;
   z-index: 100000000;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mu-app {
   display: none;
+}
+.margin-left {
+  margin-left: -9px !important;
 }
