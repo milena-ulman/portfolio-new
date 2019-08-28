@@ -2,6 +2,21 @@ WOW().init();
 $(document).ready(function() {
   $("#mu_app-loader").fadeOut();
   $("#mu_app").fadeIn();
+
+  $(
+    "a[href^='#mu-about'], a[href^='#mu-workflow'], a[href^='#mu-projects'], a[href^='#mu-contact']"
+  ).click(function(e) {
+    e.preventDefault();
+
+    var position = $($(this).attr("href")).offset().top - 50;
+
+    $("body, html").animate(
+      {
+        scrollTop: position
+      },
+      100
+    );
+  });
 });
 
 $(window).scroll(function() {

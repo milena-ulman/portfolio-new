@@ -22,9 +22,6 @@ header {
 .mu-workflow {
   z-index: 10000;
 }
-.mu-workflow {
-  background: coral;
-}
 .mu-arrow-container {
   height: 100vh;
 }
@@ -36,7 +33,6 @@ header {
   margin-bottom: 32px;
   animation: liftingSVG 2s infinite;
 }
-
 .mu-logo {
   height: 40px;
   cursor: pointer;
