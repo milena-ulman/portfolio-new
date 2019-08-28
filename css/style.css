@@ -324,9 +324,6 @@ nav ul li a.current {
 .mu-hidden {
   visibility: hidden;
 }
-.mu-top {
-  z-index: 100;
-}
 .mu-loader {
   width: 100%;
   height: 100vh;

@@ -1,7 +1,12 @@
-WOW().init();
 $(document).ready(function() {
   $("#mu_app-loader").fadeOut();
   $("#mu_app").fadeIn();
+
+  $(
+    "a[href^='#mu-about'], a[href^='#mu-workflow'], a[href^='#mu-projects'], a[href^='#mu-contact']"
+  ).click(function(e) {
+    $(".navbar-toggler").click();
+  });
 
   $(
     "a[href^='#mu-about'], a[href^='#mu-workflow'], a[href^='#mu-projects'], a[href^='#mu-contact']"
@@ -101,3 +106,4 @@ window.addEventListener("scroll", event => {
     }
   });
 });
+WOW().init();
