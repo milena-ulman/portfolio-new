@@ -56,25 +56,25 @@ $(document).ready(function() {
     container: document.getElementById("anim"),
     render: "svg",
     loop: true,
-    path: "data.json"
+    path: "/assets/data.json"
   });
   const computerAnim = bodymovin.loadAnimation({
     container: document.getElementById("computer"),
     render: "svg",
     loop: true,
-    path: "computer.json"
+    path: "/assets/computer.json"
   });
   const computerPrograming = bodymovin.loadAnimation({
     container: document.getElementById("programing"),
     render: "svg",
     loop: true,
-    path: "pro.json"
+    path: "/assets/pro.json"
   });
   const prototypeAnimation = bodymovin.loadAnimation({
     container: document.getElementById("prototype"),
     render: "svg",
     loop: true,
-    path: "prototype.json"
+    path: "/assets/prototype.json"
   });
 });
 let mainNavLinks = document.querySelectorAll("nav ul li a");
@@ -98,3 +98,13 @@ window.addEventListener("scroll", event => {
   });
 });
 WOW().init();
+$(document).ready(function() {
+  $(".mu-arrow-down").click(function() {
+    $("html, body").animate(
+      {
+        scrollTop: $(".mu-about").offset().top
+      },
+      200
+    );
+  });
+});

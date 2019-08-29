@@ -148,7 +148,7 @@ header {
 .mu-subheading {
   font-weight: 400;
   line-height: 1.5;
-  color: #666;
+  color: #595959;
 }
 .mu-section-heading {
   font-size: 48px;
@@ -297,6 +297,12 @@ header {
 }
 .mu-workflow-heading {
   font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.mu-animation-desc {
+  font-weight: 500;
+  color: #595959;
 }
 .mu-animation {
   width: 150px !important;
@@ -341,5 +347,9 @@ nav ul li a.current {
   margin-left: -9px !important;
 }
 .mu-top {
-  z-index: 100000;
+  z-index: 1000;
+}
+.mu-phone-icon {
+  height: 80px;
+  cursor: pointer;
 }
