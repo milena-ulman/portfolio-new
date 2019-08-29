@@ -27,7 +27,7 @@ $(document).ready(function() {
 $(window).scroll(function() {
   const scroll = $(window).scrollTop();
 
-  if (scroll > 50) {
+  if (scroll > 100) {
     $(".mu-arrow-down").addClass("mu-hidden");
   } else {
     $(".mu-arrow-down").removeClass("mu-hidden");
